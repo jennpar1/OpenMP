@@ -1,0 +1,25 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: myrunscript
+  The time limit is 00:02:00 HH:MM:SS.
+  The target directory is: /home/usacls04
+  The working directory is:  /scratch-local/usacls04.Open.211797
+  The memory limit is: 1gb
+  The job will start running after: 2018-11-02T12:04:14
+  Job Name: Open
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  1  cores on master node  dmc11
+  Node list:  dmc11
+  Nodes:  dmc11
+  Command typed:
+/apps/scripts/run_script myrunscript     
+  Queue submit command:
+sbatch --qos=class -J Open --begin=2018-11-02T12:04:14 --requeue --mail-user=jp1622@jagmail.southalabama.edu -o Open.o211797 -t 00:02:00 -N 1-1 -n 1 --mem-per-cpu=1000mb --constraint=dmc  
+Hello World from thread = 0
+Number of threads = 2
+Hello World from thread = 1

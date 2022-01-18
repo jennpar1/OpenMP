@@ -1,0 +1,28 @@
+setting dmc scratch directory
+ 
+============================================================
+=====         Summary of your script job               =====
+============================================================
+  The script file is: scriptHello
+  The time limit is 00:05:00 HH:MM:SS.
+  The target directory is: /home/usacls04
+  The working directory is:  /scratch-local/usacls04.scriptMPI.205714
+  The memory limit is: 5gb
+  The job will start running after: 2018-09-28T09:27:37
+  Job Name: scriptMPI
+  Virtual queue: class
+  QOS: --qos=class
+  Constraints: --constraint=dmc
+  Using  5  cores on master node  dmc201
+  Node list:  dmc201
+  Nodes:  dmc201 dmc201 dmc201 dmc201 dmc201
+  Command typed:
+/apps/scripts/run_script_mpi scriptHello     
+  Queue submit command:
+sbatch --qos=class -J scriptMPI --begin=2018-09-28T09:27:37 --requeue --mail-user=jp1622@jagmail.southalabama.edu -o scriptMPI.o205714 -t 00:05:00 -n 5 --mem-per-cpu=1000mb --constraint=dmc  
+ 
+Hello World from processor dmc201.asc.edu, rank 4 out of 5 processors
+Hello World from processor dmc201.asc.edu, rank 2 out of 5 processors
+Hello World from processor dmc201.asc.edu, rank 3 out of 5 processors
+Hello World from processor dmc201.asc.edu, rank 1 out of 5 processors
+Hello World from processor dmc201.asc.edu, rank 0 out of 5 processors
